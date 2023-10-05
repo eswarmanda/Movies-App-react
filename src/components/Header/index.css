@@ -1,0 +1,134 @@
+.nav-bar-desktop {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  position: fixed;
+}
+.header-margin {
+  width: 82%;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-bar-mobile {
+  display: none;
+}
+.list-mini {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .nav-bar-mobile {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: antiquewhite;
+    position: fixed;
+  }
+  .nav-bar-desktop {
+    display: none;
+  }
+  .nav-list-mobile {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .list-mini {
+    display: flex;
+    font-size: small;
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 40px;
+    width: 70%;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 2px 2px 16px 2px #bfbfbf;
+    margin: 2px;
+    border-radius: 10px;
+    margin-top: 80px;
+    position: fixed;
+  }
+}
+.header-card {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.website-logo-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+  margin-right: 25px;
+}
+.website-logo {
+  height: 35px;
+  margin-top: 5px;
+}
+li {
+  list-style-type: none;
+  color: antiquewhite;
+}
+.ul-card {
+  display: flex;
+  width: 180px;
+  justify-content: space-evenly;
+  margin-left: -20px;
+}
+.profile-img {
+  height: 40px;
+  margin-left: 20px;
+}
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search {
+  height: 35px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  margin: 12px;
+}
+@media screen and (max-width: 600px) {
+  .search {
+    height: 40px;
+    width: 100px;
+    padding: 10px;
+    outline: auto;
+    background-color: #424242;
+    box-shadow: 2px 2px 16px 2px #bfbfbf;
+    color: rgb(230, 230, 230);
+  }
+}
+.icon-button {
+  background-color: transparent;
+  border: none;
+}
+.icon {
+  color: #ffffff;
+  height: 25px;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.active {
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.passive {
+  color: #ffffff90;
+}

@@ -1,0 +1,78 @@
+.home-main {
+  height: 100vh;
+  /* background-color: black; */
+}
+.home-main-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.heading-container {
+  margin: 120px;
+  color: #ffffff;
+}
+@media screen and (max-width: 600px) {
+  .heading-container {
+    margin-top: 120px;
+    margin-left: 30px;
+    color: #ffffff;
+  }
+}
+.home-poster-title {
+  font-size: xx-large;
+  font-family: bree serif;
+}
+.loader-container-main-home {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(18, 18, 17, 1);
+}
+.failure-view-container {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-poster-overview {
+  font-size: small;
+}
+.home-poster-play-btn {
+  height: 35px;
+  width: 60px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ffffff;
+}
+.carousel-slick-card {
+  width: 100%;
+  height: 400px;
+  background-color: black;
+  color: #ffffff;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+@media screen and (max-width: 600px) {
+  .carousel-slick-card {
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    color: #ffffff;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.trending-list-heading {
+  font-size: large;
+}
+.slick-container {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
