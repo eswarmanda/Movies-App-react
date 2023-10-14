@@ -7,8 +7,6 @@ import './index.css'
 const Account = props => {
   const username = localStorage.getItem('username')
   const password = localStorage.getItem('password')
-  // to convert into astrick we can use the repeat function
-  // syntax : string.repeat(count);
 
   const passwordInAsterisk = '*'.repeat(password.length)
   const onClickLogout = () => {
