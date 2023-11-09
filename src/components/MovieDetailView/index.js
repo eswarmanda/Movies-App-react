@@ -142,15 +142,14 @@ class MovieDetailView extends Component {
       dateEndingWord = 'th'
     }
     return (
-      <>
-        <div className="">
-          <div className="">
-            {movieDetails.map(each => (
-              <MovieDetails movieDetails={each} key={each.id} />
-            ))}
-          </div>
+      <div className="main-movie-container">
+        <div className="movie-details-card">
+          {movieDetails.map(each => (
+            <MovieDetails movieDetails={each} key={each.id} />
+          ))}
         </div>
-        <div className="additional-movie-info-container additional-info-sm-container">
+
+        <div className="additional-movie-info-container">
           <ul className="each-genre-ul-container">
             <h1 className="movie-info-genre-heading">Genres</h1>
             {genres.map(eachGenre => (
@@ -203,7 +202,7 @@ class MovieDetailView extends Component {
             ))}
           </ul>
         </div>
-      </>
+      </div>
     )
   }
 
@@ -224,17 +223,15 @@ class MovieDetailView extends Component {
 
   render() {
     return (
-      <div className="dummy">
-        <div className="root-container">
-          <Header />
-          <div
-            className="video-details-view-container"
-            data-testid="videoItemDetails"
-          >
-            {this.renderVideoDetailView()}
-          </div>
-          <Footer />
+      <div className="root-container">
+        <Header />
+        <div
+          className="video-details-view-container"
+          data-testid="videoItemDetails"
+        >
+          {this.renderVideoDetailView()}
         </div>
+        <Footer />
       </div>
     )
   }

@@ -24,6 +24,7 @@ const MovieDetails = props => {
         backgroundPosition: 'center center',
         minHeight: '405px',
         display: 'flex',
+        width: '100%',
         flexDirection: 'column',
       }}
     >

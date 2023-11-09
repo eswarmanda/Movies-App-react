@@ -1,3 +1,19 @@
+.main-movie-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.root-container {
+  background-color: #131313;
+  width: 100%;
+}
+.video-details-view-container {
+  background-color: #131313;
+  width: 100%;
+}
+.movie-details-card {
+  width: 100%;
+}
 .movie-details-display-container {
   width: 1440px;
   height: 501px;
@@ -15,7 +31,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 70px;
+  padding: 15px;
 }
 .loader-container-main-movie-details {
   width: 100%;
@@ -76,10 +92,12 @@ li {
 .movie-info-date {
   font-size: 12px;
   color: #ffffff;
+  margin-right: 1px;
 }
 .movie-info-date-end {
   font-size: 12px;
   color: #ffffff;
+  margin-right: 3px;
 }
 .movie-info-month-name {
   font-size: 12px;
@@ -95,17 +113,12 @@ li {
 .each-genre-ul-container {
   padding: 10px;
 }
-
-.movie-info-date-end,
 .movie-info-month-name {
-  margin-right: 5px;
+  margin-right: 1px;
 }
 
 .movie-info-footer-container {
   background-color: #131313;
-}
-.dummy {
-  background-color: #0f0f0f;
 }
 .more-like-this {
   background: none;
@@ -125,12 +138,13 @@ li {
 @media screen and (max-width: 568px) {
   .additional-info-sm-container {
     display: flex;
+    width: 100%;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 10px;
     margin-top: 10px;
-    padding: 15px;
+    padding: 10px;
   }
   .more-like-this {
     background: none;
